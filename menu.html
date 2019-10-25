@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Drag'nLearn</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+	<!--<div id="barre_progression">l
+		<div id="progression">l</div>
+	</div>!-->
+	<div id="tuto_background">
+		<div id="tuto_div">
+			<label id="tuto_txt">Ceci est un tutoriel</label>
+			<div id="tuto_close" onclick="document.getElementById('tuto_background').style.display = 'none'"></div>
+		</div>
+	</div>
+	<div id="main_container">
+		<label id="label_action">ACTIONS :</label>
+		<div id="action_container">
+			<div id="if" class="action">
+				<p class="action_name">IF</p>
+				<img id="info_if" class="info" src="info.png">
+				<div id="paragraphe_info_if" class="paragraphe">
+					<label>IF STATEMENT</label>
+					<p>An if statement is a programming conditional statement that, if proved true, performs a function or displays information</p>
+				</div>
+			</div>
+			<div id="for" class="action">
+				<p class="action_name">FOR</p>
+				<img id="info_for" class="info" src="info.png">
+				<div id="paragraphe_info_for" class="paragraphe">
+					<label>FOR STATEMENT</label>
+					<p>An if statement is a programming conditional statement that, if proved true, performs a function or displays information</p>
+				</div>
+			</div>
+			<div id="while" class="action">
+				<p class="action_name">WHILE</p>
+				<img id="info_while" class="info" src="info.png">
+				<div id="paragraphe_info_while" class="paragraphe">
+					<label>WHILE STATEMENT</label>
+					<p>An if statement is a programming conditional statement that, if proved true, performs a function or displays information</p>
+				</div>
+			</div>
+			<div id="move_forward" class="action">
+				<p class="action_name">MOVE FORWARD</p>
+				<img id="info_move_forward" class="info" src="info.png">
+				<div id="paragraphe_info_move_forward" class="paragraphe">
+					<label>MOVE FORWARD</label>
+					<p>An if statement is a programming conditional statement that, if proved true, performs a function or displays information</p>
+				</div>
+			</div>
+			<div id="right_turn" class="action">
+				<p class="action_name">TURN RIGHT</p>
+				<img id="info_right_turn" class="info" src="info.png">
+				<div id="paragraphe_info_right_turn" class="paragraphe">
+					<label>RIGHT TURN</label>
+					<p>An if statement is a programming conditional statement that, if proved true, performs a function or displays information</p>
+				</div>
+			</div>
+			<div id="left_turn" class="action">
+				<p class="action_name">TURN LEFT</p>
+				<img id="info_left_turn" class="info" src="info.png">
+				<div id="paragraphe_info_left_turn" class="paragraphe">
+					<label>LEFT TURN</label>
+					<p>An if statement is a programming conditional statement that, if proved true, performs a function or displays information</p>
+				</div>
+			</div>
+		</div>
+		<label id="label_programme">PROGRAM : </label>
+		<label id="label_validation_code">CORRECT CODE</label>
+		<div id="code_container">
+			<div id="start" order="0">
+				<p class="action_name" style="color: white">START</p>
+			</div>
+			<!--
+			<div id="if_loop">
+				<label id="label_if_loop">IF</label><br>
+				<label id="label_player">Player on color :</label>
+				<select class="color_select">
+					<option value="red">RED</option>
+					<option value="green">GREEN</option>
+					<option value="blue">BLUE</option>
+				</select>
+			</div>
+			<div id="for_loop">
+				<label id="label_for_loop">FOR</label><br>
+				<label id="label_incrementer">INCREMENTER  <</label>
+				<input type="number" name="number_for" id="number_for">
+			</div>
+			<div id="while_loop">
+				<label id="label_for_while">WHILE</label><br>
+				<label id="label_color_while">PLAYER ON</label>
+				<select id="color_select_while">
+					<option value="red">RED</option>
+					<option value="green">GREEN</option>
+					<option value="blue">BLUE</option>
+					<option value="flag">THE FLAG</option>
+				</select>
+			</div>
+			<div id="move_forward_code" class="action_code">
+				<p id="label_move_forward_code" class="action_name">MOVE FOWARD</p>
+			</div>
+			<div id="right_turn_code" class="action_code">
+				<p id="label_right_turn_code" class="action_name" >RIGHT TURN</p>
+			</div>
+			<div id="left_turn_code" class="action_code">
+				<p id="label_left_turn_code" class="action_name">LEFT TURN</p>
+			</div>
+			<div id="end_while_code" class="action_code">
+				<p id="label_end_while_code" class="action_name">END WHILE</p>
+			</div>
+			<div id="end_for_code" class="action_code">
+				<p id="label_end_for_incrementeur" class="action_name">INCREMENTER ++</p>
+				<p id="label_end_for_code" class="action_name">END FOR</p>
+			</div>
+		-->
+		</div>
+		<div id="joueur" style="z-index: 1"></div>
+		<label id="label_resultat">RESULT :</label>
+		<div id="play-button" onclick="Execute()">▶</div>
+		<label id="label_executer">EXECUTE</label>
+		<div id="grid">
+			<table>
+		<tr>
+			<td id="0"></td>
+			<td id="1"></td>
+			<td id="2"></td>
+			<td id="3"></td>
+			<td id="4"></td>
+			<td id="5"></td>
+		</tr>
+		<tr>
+			<td id="6"></td>
+			<td id="7"></td>
+			<td id="8"></td>
+			<td id="9"></td>
+			<td id="10"></td>
+			<td id="11"></td>
+		</tr>
+		<tr>
+			<td id="12"></td>
+			<td id="13"></td>
+			<td id="14"></td>
+			<td id="15"></td>
+			<td id="16"></td>
+			<td id="17"></td>
+		</tr>
+		<tr>
+			<td id="18"></td>
+			<td id="19"></td>
+			<td id="20"></td>
+			<td id="21"></td>
+			<td id="22"></td>
+			<td id="23"></td>
+		</tr>
+		<tr>
+			<td id="24"></td>
+			<td id="25"></td>
+			<td id="26"></td>
+			<td id="27"></td>
+			<td id="28"></td>
+			<td id="29"></td>
+		</tr>
+		<tr>
+			<td id="30"></td>
+			<td id="31"></td>
+			<td id="32"></td>
+			<td id="33"></td>
+			<td id="34"></td>
+			<td id="35"></td>
+		</tr>
+	</table>
+		</div>
+		<label id="label_score">BEST SCORE :</label>
+		<div id="star"></div>
+		<div id="recap"></div>
+		<div id="change_level">
+			<label id="label_change_level">CHANGE LEVEL</label>
+		</div>
+	</div>
+
+	<div id="hide_background">l</div>
+	<div id="victory_screen">
+		<p id="x">
+			<label id="x_label">X</label>
+		</p>
+		<label id="label_congratulations">CONGRATULATIONS !</label>
+		<span id="star_victory_screen" class="fa	fa-star checked test_etoile"></span>
+		<span id="star_victory_screen_2" class="fa	fa-star checked test_etoile"></span>
+		<span id="star_victory_screen_3" class="fa	fa-star checked test_etoile"></span>
+		<div id="victory_continue">
+			<label id="label_victory_continue">CONTINUE</label>
+		</div>
+		<div id="victory_change_level">
+			<label id="label_victory_change_level">CHANGE LEVEL</label>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="script2.js"></script>
+	<script type="text/javascript" src="script.js">	</script>
+	<script type="text/javascript" src="menu.js"></script>
+	<script type="text/javascript" src="script3.js"></script>
+</body>
+</html>
